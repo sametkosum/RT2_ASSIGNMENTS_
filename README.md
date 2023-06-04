@@ -1,4 +1,4 @@
-# RT2 - Assignment 1 - Doxygen Documentation on ROS Simulator  
+# RT2 - Assignment 1 -  Documentation on ROS Simulator  
 RT1 - Assignment 2 - ROS Simulator
 **Professor: Carmine Tommaso Recchiuto, Student: Ahmet Samet Kosum (s5635830)**
 
