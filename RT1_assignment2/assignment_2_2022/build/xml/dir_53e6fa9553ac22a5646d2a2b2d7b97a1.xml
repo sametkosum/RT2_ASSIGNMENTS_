@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir">
+    <compoundname>/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts</compoundname>
+    <innerfile refid="_a_c_t_i_o_n___c_l_i_e_n_t_8py">ACTION_CLIENT.py</innerfile>
+    <innerfile refid="bug__as_8py">bug_as.py</innerfile>
+    <innerfile refid="go__to__point__service_8py">go_to_point_service.py</innerfile>
+    <innerfile refid="_o_u_t_p_u_t_8py">OUTPUT.py</innerfile>
+    <innerfile refid="_t_a_r_g_e_t_s_e_r_v_i_c_e_8py">TARGETSERVICE.py</innerfile>
+    <innerfile refid="wall__follow__service_8py">wall_follow_service.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/"/>
+  </compounddef>
+</doxygen>

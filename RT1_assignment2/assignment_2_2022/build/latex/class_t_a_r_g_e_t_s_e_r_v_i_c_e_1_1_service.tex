@@ -1,0 +1,86 @@
+\hypertarget{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service}{}\doxysection{T\+A\+R\+G\+E\+T\+S\+E\+R\+V\+I\+C\+E.\+Service Class Reference}
+\label{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service}\index{TARGETSERVICE.Service@{TARGETSERVICE.Service}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a9d5238220d4cac4e28797f9dbba8e651}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_aa6695cc03e42f50a4a26b9708b2ecdbd}{result\+\_\+callback}} (self, msg)
+\item 
+def \mbox{\hyperlink{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_aed809f64cc5c36179b41b32536b44da1}{data}} (self, req)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a06e4e13100fa1c267f3f53b4e8fc389c}\label{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a06e4e13100fa1c267f3f53b4e8fc389c}} 
+{\bfseries T\+A\+R\+G\+E\+T\+\_\+\+C\+A\+N\+C\+E\+L\+L\+ED}
+\item 
+\mbox{\Hypertarget{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a28b243ba747b4feeac755a0c8d6be5bb}\label{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a28b243ba747b4feeac755a0c8d6be5bb}} 
+{\bfseries T\+A\+R\+G\+E\+T\+\_\+\+R\+E\+A\+C\+H\+ED}
+\item 
+\mbox{\Hypertarget{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a4f3676e0519791f551721e430815f76a}\label{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a4f3676e0519791f551721e430815f76a}} 
+{\bfseries srv}
+\item 
+\mbox{\Hypertarget{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a64d5f7a7531b0c0fcc51c69a2f3cda96}\label{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a64d5f7a7531b0c0fcc51c69a2f3cda96}} 
+{\bfseries sub\+\_\+result}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class provides a ROS service to get the number of goals reached and cancelled.
+
+Attributes:
+    TARGET_CANCELLED (int): The number of targets that were cancelled.
+    TARGET_REACHED (int): The number of targets that were reached.
+    srv (rospy.Service): The ROS service that will provide the data.
+    sub_result (rospy.Subscriber): The ROS subscriber for the result topic.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a9d5238220d4cac4e28797f9dbba8e651}\label{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_a9d5238220d4cac4e28797f9dbba8e651}} 
+\index{TARGETSERVICE.Service@{TARGETSERVICE.Service}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!TARGETSERVICE.Service@{TARGETSERVICE.Service}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def T\+A\+R\+G\+E\+T\+S\+E\+R\+V\+I\+C\+E.\+Service.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The constructor for the Service class.
+
+Initializes the counters for goals reached and cancelled,
+creates the service, and subscribes to the result topic.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_aed809f64cc5c36179b41b32536b44da1}\label{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_aed809f64cc5c36179b41b32536b44da1}} 
+\index{TARGETSERVICE.Service@{TARGETSERVICE.Service}!data@{data}}
+\index{data@{data}!TARGETSERVICE.Service@{TARGETSERVICE.Service}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily def T\+A\+R\+G\+E\+T\+S\+E\+R\+V\+I\+C\+E.\+Service.\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function that is called when the service is requested.
+
+Returns the response containing the current values of TARGET_CANCELLED and TARGET_REACHED.
+
+Args:
+    req (goal_rc): The request message.
+
+Returns:
+    goal_rcResponse: The response message.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_aa6695cc03e42f50a4a26b9708b2ecdbd}\label{class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_aa6695cc03e42f50a4a26b9708b2ecdbd}} 
+\index{TARGETSERVICE.Service@{TARGETSERVICE.Service}!result\_callback@{result\_callback}}
+\index{result\_callback@{result\_callback}!TARGETSERVICE.Service@{TARGETSERVICE.Service}}
+\doxysubsubsection{\texorpdfstring{result\_callback()}{result\_callback()}}
+{\footnotesize\ttfamily def T\+A\+R\+G\+E\+T\+S\+E\+R\+V\+I\+C\+E.\+Service.\+result\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A callback function that updates the number of targets reached and cancelled.
+
+Args:
+    msg (PlanningActionResult): The message received from the /reaching_goal/result topic.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/samet/catkin\+\_\+ws/src/\+R\+T1\+\_\+assignment2/assignment\+\_\+2\+\_\+2022/scripts/T\+A\+R\+G\+E\+T\+S\+E\+R\+V\+I\+C\+E.\+py\end{DoxyCompactItemize}

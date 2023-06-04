@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespace_a_c_t_i_o_n___c_l_i_e_n_t" kind="namespace" language="Python">
+    <compoundname>ACTION_CLIENT</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_a_c_t_i_o_n___c_l_i_e_n_t_1a6bd59a7c8bc02443ab58b59f793fdd38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ACTION_CLIENT.publisher</definition>
+        <argsstring>(msg)</argsstring>
+        <name>publisher</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function for the subscriber.
+
+Gets the position and velocity from the message, creates a custom message
+with these parameters, and publishes it.
+
+Args:
+    msg (Odometry): The message received from the subscriber.
+
+Returns:
+    None
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/ACTION_CLIENT.py" line="32" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/ACTION_CLIENT.py" bodystart="32" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_a_c_t_i_o_n___c_l_i_e_n_t_1aa1cfb2d8dbe4e41ce1df5389fe7a6fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ACTION_CLIENT.action_client</definition>
+        <argsstring>()</argsstring>
+        <name>action_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs the action client.
+
+Prompts the user to enter a target position or cancel the current goal.
+Sends the goal to the action server and waits for a response.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/ACTION_CLIENT.py" line="54" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/ACTION_CLIENT.py" bodystart="54" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_a_c_t_i_o_n___c_l_i_e_n_t_1a53a621ecbfa941f65c39c15a659f60f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def ACTION_CLIENT.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initializes the ROS node and runs the action client.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/ACTION_CLIENT.py" line="93" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/ACTION_CLIENT.py" bodystart="93" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Module: ACTION_CLIENT
+Platform: Ubuntu
+Synopsis:  it is a ROS node for controlling a robot that subscribes to &quot;/odom&quot; topic to get position and velocity information and publishes to &quot;/posxy_velxy&quot; topic. It also implements an action client to prompt the user to enter a target position or cancel the current goal and sends the goal to the action server and waits for a response.
+Module author: AHMET SAMET KOSUM 
+
+ROS node for controlling the robot. Subscribes to /odom and publishes to /posxy_velxy. Also implements an action client.
+
+
+Subscribes to:
+    /odom
+
+Publishes to:
+    /posxy_velxy
+
+Clients:
+    /reaching_goal
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/ACTION_CLIENT.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

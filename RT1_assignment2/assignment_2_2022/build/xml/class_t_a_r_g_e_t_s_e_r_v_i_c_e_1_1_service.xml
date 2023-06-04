@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service" kind="class" language="Python" prot="public">
+    <compoundname>TARGETSERVICE::Service</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a06e4e13100fa1c267f3f53b4e8fc389c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TARGETSERVICE.Service::TARGET_CANCELLED</definition>
+        <argsstring></argsstring>
+        <name>TARGET_CANCELLED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="41" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a28b243ba747b4feeac755a0c8d6be5bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TARGETSERVICE.Service::TARGET_REACHED</definition>
+        <argsstring></argsstring>
+        <name>TARGET_REACHED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="42" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a4f3676e0519791f551721e430815f76a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TARGETSERVICE.Service::srv</definition>
+        <argsstring></argsstring>
+        <name>srv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="44" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a64d5f7a7531b0c0fcc51c69a2f3cda96" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>TARGETSERVICE.Service::sub_result</definition>
+        <argsstring></argsstring>
+        <name>sub_result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="45" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a9d5238220d4cac4e28797f9dbba8e651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def TARGETSERVICE.Service.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The constructor for the Service class.
+
+Initializes the counters for goals reached and cancelled,
+creates the service, and subscribes to the result topic.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="34" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="34" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1aa6695cc03e42f50a4a26b9708b2ecdbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def TARGETSERVICE.Service.result_callback</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>result_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A callback function that updates the number of targets reached and cancelled.
+
+Args:
+    msg (PlanningActionResult): The message received from the /reaching_goal/result topic.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="49" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="49" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1aed809f64cc5c36179b41b32536b44da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def TARGETSERVICE.Service.data</definition>
+        <argsstring>(self, req)</argsstring>
+        <name>data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>req</type>
+          <defname>req</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The function that is called when the service is requested.
+
+Returns the response containing the current values of TARGET_CANCELLED and TARGET_REACHED.
+
+Args:
+    req (goal_rc): The request message.
+
+Returns:
+    goal_rcResponse: The response message.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="62" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="62" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>This class provides a ROS service to get the number of goals reached and cancelled.
+
+Attributes:
+    TARGET_CANCELLED (int): The number of targets that were cancelled.
+    TARGET_REACHED (int): The number of targets that were reached.
+    srv (rospy.Service): The ROS service that will provide the data.
+    sub_result (rospy.Subscriber): The ROS subscriber for the result topic.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="23" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="23" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a9d5238220d4cac4e28797f9dbba8e651" prot="public" virt="non-virtual"><scope>TARGETSERVICE::Service</scope><name>__init__</name></member>
+      <member refid="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1aed809f64cc5c36179b41b32536b44da1" prot="public" virt="non-virtual"><scope>TARGETSERVICE::Service</scope><name>data</name></member>
+      <member refid="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1aa6695cc03e42f50a4a26b9708b2ecdbd" prot="public" virt="non-virtual"><scope>TARGETSERVICE::Service</scope><name>result_callback</name></member>
+      <member refid="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a4f3676e0519791f551721e430815f76a" prot="public" virt="non-virtual"><scope>TARGETSERVICE::Service</scope><name>srv</name></member>
+      <member refid="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a64d5f7a7531b0c0fcc51c69a2f3cda96" prot="public" virt="non-virtual"><scope>TARGETSERVICE::Service</scope><name>sub_result</name></member>
+      <member refid="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a06e4e13100fa1c267f3f53b4e8fc389c" prot="public" virt="non-virtual"><scope>TARGETSERVICE::Service</scope><name>TARGET_CANCELLED</name></member>
+      <member refid="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service_1a28b243ba747b4feeac755a0c8d6be5bb" prot="public" virt="non-virtual"><scope>TARGETSERVICE::Service</scope><name>TARGET_REACHED</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespace_o_u_t_p_u_t" kind="namespace" language="Python">
+    <compoundname>OUTPUT</compoundname>
+    <innerclass refid="class_o_u_t_p_u_t_1_1_print_info" prot="public">OUTPUT::PrintInfo</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_o_u_t_p_u_t_1a8f143afafbe32ef615b3103bc78f5ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def OUTPUT.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Main method for initializing the node and creating an instance of PrintInfo class.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" line="87" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" bodystart="87" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: OUTPUT
+:platform: Ubuntu
+:synopsis: Python module for controlling the turtlesim.
+
+.. moduleauthor:: AHMET SAMET KOSUM
+
+ROS node for controlling the robot.
+
+Subscribes to:
+/posxy_velxy
+
+Publishes to:
+/my_turtle/cmd_vel
+
+Parameters:
+frequency (float): the frequency of the information printed in Hz.
+des_pos_x (float): the desired x position of the robot.
+des_pos_y (float): the desired y position of the robot.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

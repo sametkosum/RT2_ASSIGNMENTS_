@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacewall__follow__service" kind="namespace" language="Python">
+    <compoundname>wall_follow_service</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacewall__follow__service_1ad909574f259c916146de0367c7706e36" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool wall_follow_service.active_</definition>
+        <argsstring></argsstring>
+        <name>active_</name>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="31" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacewall__follow__service_1af90deadd716ff3782b83a6a3d9152585" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>wall_follow_service.pub_</definition>
+        <argsstring></argsstring>
+        <name>pub_</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="32" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacewall__follow__service_1ab578b170aebbf718a0237e84d002876f" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary wall_follow_service.regions_</definition>
+        <argsstring></argsstring>
+        <name>regions_</name>
+        <initializer>=  {
+    &apos;right&apos;: 0,
+    &apos;fright&apos;: 0,
+    &apos;front&apos;: 0,
+    &apos;fleft&apos;: 0,
+    &apos;left&apos;: 0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="34" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacewall__follow__service_1aa57f38071ffa0bc40246d2287613be64" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wall_follow_service.state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="42" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacewall__follow__service_1aa31ff1bd4c42cb00736568f9b7a8e0d0" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary wall_follow_service.state_dict_</definition>
+        <argsstring></argsstring>
+        <name>state_dict_</name>
+        <initializer>=  {
+    0: &apos;find the wall&apos;,
+    1: &apos;turn left&apos;,
+    2: &apos;follow the wall&apos;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="43" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacewall__follow__service_1aa62fc1c79bf46bcbfc6cfa338feb1bc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def wall_follow_service.wall_follower_switch</definition>
+        <argsstring>(req)</argsstring>
+        <name>wall_follower_switch</name>
+        <param>
+          <type>req</type>
+          <defname>req</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function to switch the wall follower on/off
+
+Args:
+    req: A ROS service request object of type SetBool
+
+Returns:
+    res: A ROS service response object of type SetBoolResponse
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="49" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="49" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacewall__follow__service_1a081b7835272ee06e51efdce2918f19f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def wall_follow_service.clbk_laser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>clbk_laser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function for the LaserScan subscriber
+
+Args:
+    msg: A ROS message of type LaserScan
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="65" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="65" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacewall__follow__service_1a78f097ddc9b97580d9f54d95f9c0e321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def wall_follow_service.change_state</definition>
+        <argsstring>(state)</argsstring>
+        <name>change_state</name>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function to change the state of the robot
+
+Args:
+    state: The new state of the robot (integer)
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="81" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="81" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacewall__follow__service_1abf15ac3f10e8607383ca78f3056c8a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def wall_follow_service.take_action</definition>
+        <argsstring>()</argsstring>
+        <name>take_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function to determine the appropriate action for the robot based on its current state</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="93" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="93" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacewall__follow__service_1ad468da59b5a24f5e71d1f8c6381c5384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def wall_follow_service.find_wall</definition>
+        <argsstring>()</argsstring>
+        <name>find_wall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets the robot&apos;s velocity to move forward and turn left.
+
+Returns:
+    geometry_msgs.msg.Twist: The Twist message.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="134" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="134" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacewall__follow__service_1a47da44503aa8f452b553ccf419940d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def wall_follow_service.turn_left</definition>
+        <argsstring>()</argsstring>
+        <name>turn_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets the robot&apos;s velocity to turn left.
+
+Returns:
+    geometry_msgs.msg.Twist: The Twist message.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="146" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="146" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacewall__follow__service_1a333a30da2a8f24e46f7b900df6624d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def wall_follow_service.follow_the_wall</definition>
+        <argsstring>()</argsstring>
+        <name>follow_the_wall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Sets the robot&apos;s velocity to follow the wall.
+
+Returns:
+    geometry_msgs.msg.Twist: The Twist message.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="157" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="157" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacewall__follow__service_1af098a5a5d743dd6860f1403083e4b17d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def wall_follow_service.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Main function that initializes the ROS node and sets up subscribers and publishers
+for the laser scan and robot velocity commands.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="170" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" bodystart="170" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: wall_folllow_service
+   :platform: Ubuntu
+   :synopsis: This node subscribes to LaserScan messages and publishes Twist messages to control the robot&apos;s velocity.
+
+
+.. moduleauthor:: AHMET SAMET KOSUM
+
+This ROS node controls the turtle robot using laser scans to detect obstacles
+and follow walls.
+
+Subscribes to:
+    /scan (sensor_msgs/LaserScan)
+
+Publishes to:
+    /cmd_vel (geometry_msgs/Twist)
+
+Clients:
+    /wall_follower_switch (std_srvs/SetBool)
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/wall_follow_service.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

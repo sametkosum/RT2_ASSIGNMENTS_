@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_o_u_t_p_u_t_1_1_print_info" kind="class" language="Python" prot="public">
+    <compoundname>OUTPUT::PrintInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_o_u_t_p_u_t_1_1_print_info_1a148b854a1037789b4dabe2ec83712034" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>OUTPUT.PrintInfo::F</definition>
+        <argsstring></argsstring>
+        <name>F</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" line="42" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_o_u_t_p_u_t_1_1_print_info_1aaeca7e08b0ffc69a9decf41fe6e60df8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>OUTPUT.PrintInfo::LASTTIME</definition>
+        <argsstring></argsstring>
+        <name>LASTTIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" line="43" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_o_u_t_p_u_t_1_1_print_info_1ad3d737d2ea1414f9370d176833bfd4ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>OUTPUT.PrintInfo::sub_pos</definition>
+        <argsstring></argsstring>
+        <name>sub_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" line="46" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_o_u_t_p_u_t_1_1_print_info_1a588f1d985bec9eec3580d81fa18e29ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def OUTPUT.PrintInfo.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Constructor method.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" line="38" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" bodystart="38" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_o_u_t_p_u_t_1_1_print_info_1aad69d59bee0bc2932ad13164cdabd9ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def OUTPUT.PrintInfo.posvel_callback</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>posvel_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function to print the distance and average speed of the robot.
+
+Args:
+    msg (Posxy_velxy): the message containing the robot&apos;s position and velocity.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" line="48" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" bodystart="48" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for printing the distance and average speed of the robot to the desired position.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" line="33" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/OUTPUT.py" bodystart="33" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_o_u_t_p_u_t_1_1_print_info_1a588f1d985bec9eec3580d81fa18e29ed" prot="public" virt="non-virtual"><scope>OUTPUT::PrintInfo</scope><name>__init__</name></member>
+      <member refid="class_o_u_t_p_u_t_1_1_print_info_1a148b854a1037789b4dabe2ec83712034" prot="public" virt="non-virtual"><scope>OUTPUT::PrintInfo</scope><name>F</name></member>
+      <member refid="class_o_u_t_p_u_t_1_1_print_info_1aaeca7e08b0ffc69a9decf41fe6e60df8" prot="public" virt="non-virtual"><scope>OUTPUT::PrintInfo</scope><name>LASTTIME</name></member>
+      <member refid="class_o_u_t_p_u_t_1_1_print_info_1aad69d59bee0bc2932ad13164cdabd9ce" prot="public" virt="non-virtual"><scope>OUTPUT::PrintInfo</scope><name>posvel_callback</name></member>
+      <member refid="class_o_u_t_p_u_t_1_1_print_info_1ad3d737d2ea1414f9370d176833bfd4ba" prot="public" virt="non-virtual"><scope>OUTPUT::PrintInfo</scope><name>sub_pos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

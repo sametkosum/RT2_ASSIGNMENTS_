@@ -1,0 +1,182 @@
+\hypertarget{namespacewall__follow__service}{}\doxysection{wall\+\_\+follow\+\_\+service Namespace Reference}
+\label{namespacewall__follow__service}\index{wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacewall__follow__service_aa62fc1c79bf46bcbfc6cfa338feb1bc1}{wall\+\_\+follower\+\_\+switch}} (req)
+\item 
+def \mbox{\hyperlink{namespacewall__follow__service_a081b7835272ee06e51efdce2918f19f1}{clbk\+\_\+laser}} (msg)
+\item 
+def \mbox{\hyperlink{namespacewall__follow__service_a78f097ddc9b97580d9f54d95f9c0e321}{change\+\_\+state}} (state)
+\item 
+def \mbox{\hyperlink{namespacewall__follow__service_abf15ac3f10e8607383ca78f3056c8a14}{take\+\_\+action}} ()
+\item 
+def \mbox{\hyperlink{namespacewall__follow__service_ad468da59b5a24f5e71d1f8c6381c5384}{find\+\_\+wall}} ()
+\item 
+def \mbox{\hyperlink{namespacewall__follow__service_a47da44503aa8f452b553ccf419940d3c}{turn\+\_\+left}} ()
+\item 
+def \mbox{\hyperlink{namespacewall__follow__service_a333a30da2a8f24e46f7b900df6624d65}{follow\+\_\+the\+\_\+wall}} ()
+\item 
+def \mbox{\hyperlink{namespacewall__follow__service_af098a5a5d743dd6860f1403083e4b17d}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacewall__follow__service_ad909574f259c916146de0367c7706e36}\label{namespacewall__follow__service_ad909574f259c916146de0367c7706e36}} 
+bool {\bfseries active\+\_\+} = False
+\item 
+\mbox{\Hypertarget{namespacewall__follow__service_af90deadd716ff3782b83a6a3d9152585}\label{namespacewall__follow__service_af90deadd716ff3782b83a6a3d9152585}} 
+{\bfseries pub\+\_\+} = None
+\item 
+dictionary {\bfseries regions\+\_\+}
+\item 
+\mbox{\Hypertarget{namespacewall__follow__service_aa57f38071ffa0bc40246d2287613be64}\label{namespacewall__follow__service_aa57f38071ffa0bc40246d2287613be64}} 
+int {\bfseries state\+\_\+} = 0
+\item 
+dictionary {\bfseries state\+\_\+dict\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: wall_folllow_service
+   :platform: Ubuntu
+   :synopsis: This node subscribes to LaserScan messages and publishes Twist messages to control the robot's velocity.
+
+
+.. moduleauthor:: AHMET SAMET KOSUM
+
+This ROS node controls the turtle robot using laser scans to detect obstacles
+and follow walls.
+
+Subscribes to:
+    /scan (sensor_msgs/LaserScan)
+
+Publishes to:
+    /cmd_vel (geometry_msgs/Twist)
+
+Clients:
+    /wall_follower_switch (std_srvs/SetBool)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacewall__follow__service_a78f097ddc9b97580d9f54d95f9c0e321}\label{namespacewall__follow__service_a78f097ddc9b97580d9f54d95f9c0e321}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!change\_state@{change\_state}}
+\index{change\_state@{change\_state}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{change\_state()}{change\_state()}}
+{\footnotesize\ttfamily def wall\+\_\+follow\+\_\+service.\+change\+\_\+state (\begin{DoxyParamCaption}\item[{}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to change the state of the robot
+
+Args:
+    state: The new state of the robot (integer)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewall__follow__service_a081b7835272ee06e51efdce2918f19f1}\label{namespacewall__follow__service_a081b7835272ee06e51efdce2918f19f1}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!clbk\_laser@{clbk\_laser}}
+\index{clbk\_laser@{clbk\_laser}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{clbk\_laser()}{clbk\_laser()}}
+{\footnotesize\ttfamily def wall\+\_\+follow\+\_\+service.\+clbk\+\_\+laser (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function for the LaserScan subscriber
+
+Args:
+    msg: A ROS message of type LaserScan
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewall__follow__service_ad468da59b5a24f5e71d1f8c6381c5384}\label{namespacewall__follow__service_ad468da59b5a24f5e71d1f8c6381c5384}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!find\_wall@{find\_wall}}
+\index{find\_wall@{find\_wall}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{find\_wall()}{find\_wall()}}
+{\footnotesize\ttfamily def wall\+\_\+follow\+\_\+service.\+find\+\_\+wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the robot's velocity to move forward and turn left.
+
+Returns:
+    geometry_msgs.msg.Twist: The Twist message.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewall__follow__service_a333a30da2a8f24e46f7b900df6624d65}\label{namespacewall__follow__service_a333a30da2a8f24e46f7b900df6624d65}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!follow\_the\_wall@{follow\_the\_wall}}
+\index{follow\_the\_wall@{follow\_the\_wall}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{follow\_the\_wall()}{follow\_the\_wall()}}
+{\footnotesize\ttfamily def wall\+\_\+follow\+\_\+service.\+follow\+\_\+the\+\_\+wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the robot's velocity to follow the wall.
+
+Returns:
+    geometry_msgs.msg.Twist: The Twist message.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewall__follow__service_af098a5a5d743dd6860f1403083e4b17d}\label{namespacewall__follow__service_af098a5a5d743dd6860f1403083e4b17d}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!main@{main}}
+\index{main@{main}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def wall\+\_\+follow\+\_\+service.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Main function that initializes the ROS node and sets up subscribers and publishers
+for the laser scan and robot velocity commands.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewall__follow__service_abf15ac3f10e8607383ca78f3056c8a14}\label{namespacewall__follow__service_abf15ac3f10e8607383ca78f3056c8a14}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!take\_action@{take\_action}}
+\index{take\_action@{take\_action}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{take\_action()}{take\_action()}}
+{\footnotesize\ttfamily def wall\+\_\+follow\+\_\+service.\+take\+\_\+action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to determine the appropriate action for the robot based on its current state\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewall__follow__service_a47da44503aa8f452b553ccf419940d3c}\label{namespacewall__follow__service_a47da44503aa8f452b553ccf419940d3c}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!turn\_left@{turn\_left}}
+\index{turn\_left@{turn\_left}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{turn\_left()}{turn\_left()}}
+{\footnotesize\ttfamily def wall\+\_\+follow\+\_\+service.\+turn\+\_\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the robot's velocity to turn left.
+
+Returns:
+    geometry_msgs.msg.Twist: The Twist message.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacewall__follow__service_aa62fc1c79bf46bcbfc6cfa338feb1bc1}\label{namespacewall__follow__service_aa62fc1c79bf46bcbfc6cfa338feb1bc1}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!wall\_follower\_switch@{wall\_follower\_switch}}
+\index{wall\_follower\_switch@{wall\_follower\_switch}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{wall\_follower\_switch()}{wall\_follower\_switch()}}
+{\footnotesize\ttfamily def wall\+\_\+follow\+\_\+service.\+wall\+\_\+follower\+\_\+switch (\begin{DoxyParamCaption}\item[{}]{req }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function to switch the wall follower on/off
+
+Args:
+    req: A ROS service request object of type SetBool
+
+Returns:
+    res: A ROS service response object of type SetBoolResponse
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacewall__follow__service_ab578b170aebbf718a0237e84d002876f}\label{namespacewall__follow__service_ab578b170aebbf718a0237e84d002876f}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!regions\_@{regions\_}}
+\index{regions\_@{regions\_}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{regions\_}{regions\_}}
+{\footnotesize\ttfamily dictionary wall\+\_\+follow\+\_\+service.\+regions\+\_\+}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'right'}: 0,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'fright'}: 0,}
+\DoxyCodeLine{4     \textcolor{stringliteral}{'front'}: 0,}
+\DoxyCodeLine{5     \textcolor{stringliteral}{'fleft'}: 0,}
+\DoxyCodeLine{6     \textcolor{stringliteral}{'left'}: 0,}
+\DoxyCodeLine{7 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacewall__follow__service_aa31ff1bd4c42cb00736568f9b7a8e0d0}\label{namespacewall__follow__service_aa31ff1bd4c42cb00736568f9b7a8e0d0}} 
+\index{wall\_follow\_service@{wall\_follow\_service}!state\_dict\_@{state\_dict\_}}
+\index{state\_dict\_@{state\_dict\_}!wall\_follow\_service@{wall\_follow\_service}}
+\doxysubsubsection{\texorpdfstring{state\_dict\_}{state\_dict\_}}
+{\footnotesize\ttfamily dictionary wall\+\_\+follow\+\_\+service.\+state\+\_\+dict\+\_\+}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     0: \textcolor{stringliteral}{'find the wall'},}
+\DoxyCodeLine{3     1: \textcolor{stringliteral}{'turn left'},}
+\DoxyCodeLine{4     2: \textcolor{stringliteral}{'follow the wall'},}
+\DoxyCodeLine{5 \}}
+
+\end{DoxyCode}

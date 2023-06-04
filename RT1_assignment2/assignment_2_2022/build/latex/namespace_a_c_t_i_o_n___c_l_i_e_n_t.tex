@@ -1,0 +1,70 @@
+\hypertarget{namespace_a_c_t_i_o_n___c_l_i_e_n_t}{}\doxysection{A\+C\+T\+I\+O\+N\+\_\+\+C\+L\+I\+E\+NT Namespace Reference}
+\label{namespace_a_c_t_i_o_n___c_l_i_e_n_t}\index{ACTION\_CLIENT@{ACTION\_CLIENT}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_a_c_t_i_o_n___c_l_i_e_n_t_a6bd59a7c8bc02443ab58b59f793fdd38}{publisher}} (msg)
+\item 
+def \mbox{\hyperlink{namespace_a_c_t_i_o_n___c_l_i_e_n_t_aa1cfb2d8dbe4e41ce1df5389fe7a6fad}{action\+\_\+client}} ()
+\item 
+def \mbox{\hyperlink{namespace_a_c_t_i_o_n___c_l_i_e_n_t_a53a621ecbfa941f65c39c15a659f60f0}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Module: ACTION_CLIENT
+Platform: Ubuntu
+Synopsis:  it is a ROS node for controlling a robot that subscribes to "/odom" topic to get position and velocity information and publishes to "/posxy_velxy" topic. It also implements an action client to prompt the user to enter a target position or cancel the current goal and sends the goal to the action server and waits for a response.
+Module author: AHMET SAMET KOSUM 
+
+ROS node for controlling the robot. Subscribes to /odom and publishes to /posxy_velxy. Also implements an action client.
+
+
+Subscribes to:
+    /odom
+
+Publishes to:
+    /posxy_velxy
+
+Clients:
+    /reaching_goal
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_a_c_t_i_o_n___c_l_i_e_n_t_aa1cfb2d8dbe4e41ce1df5389fe7a6fad}\label{namespace_a_c_t_i_o_n___c_l_i_e_n_t_aa1cfb2d8dbe4e41ce1df5389fe7a6fad}} 
+\index{ACTION\_CLIENT@{ACTION\_CLIENT}!action\_client@{action\_client}}
+\index{action\_client@{action\_client}!ACTION\_CLIENT@{ACTION\_CLIENT}}
+\doxysubsubsection{\texorpdfstring{action\_client()}{action\_client()}}
+{\footnotesize\ttfamily def A\+C\+T\+I\+O\+N\+\_\+\+C\+L\+I\+E\+N\+T.\+action\+\_\+client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs the action client.
+
+Prompts the user to enter a target position or cancel the current goal.
+Sends the goal to the action server and waits for a response.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_a_c_t_i_o_n___c_l_i_e_n_t_a53a621ecbfa941f65c39c15a659f60f0}\label{namespace_a_c_t_i_o_n___c_l_i_e_n_t_a53a621ecbfa941f65c39c15a659f60f0}} 
+\index{ACTION\_CLIENT@{ACTION\_CLIENT}!main@{main}}
+\index{main@{main}!ACTION\_CLIENT@{ACTION\_CLIENT}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def A\+C\+T\+I\+O\+N\+\_\+\+C\+L\+I\+E\+N\+T.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the ROS node and runs the action client.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_a_c_t_i_o_n___c_l_i_e_n_t_a6bd59a7c8bc02443ab58b59f793fdd38}\label{namespace_a_c_t_i_o_n___c_l_i_e_n_t_a6bd59a7c8bc02443ab58b59f793fdd38}} 
+\index{ACTION\_CLIENT@{ACTION\_CLIENT}!publisher@{publisher}}
+\index{publisher@{publisher}!ACTION\_CLIENT@{ACTION\_CLIENT}}
+\doxysubsubsection{\texorpdfstring{publisher()}{publisher()}}
+{\footnotesize\ttfamily def A\+C\+T\+I\+O\+N\+\_\+\+C\+L\+I\+E\+N\+T.\+publisher (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function for the subscriber.
+
+Gets the position and velocity from the message, creates a custom message
+with these parameters, and publishes it.
+
+Args:
+    msg (Odometry): The message received from the subscriber.
+
+Returns:
+    None
+\end{DoxyVerb}
+ 

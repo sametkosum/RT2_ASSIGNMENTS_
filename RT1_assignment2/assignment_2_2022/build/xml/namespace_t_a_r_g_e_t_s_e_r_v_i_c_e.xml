@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespace_t_a_r_g_e_t_s_e_r_v_i_c_e" kind="namespace" language="Python">
+    <compoundname>TARGETSERVICE</compoundname>
+    <innerclass refid="class_t_a_r_g_e_t_s_e_r_v_i_c_e_1_1_service" prot="public">TARGETSERVICE::Service</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_t_a_r_g_e_t_s_e_r_v_i_c_e_1a44bd2f62d47d2f3525729c174d784c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def TARGETSERVICE.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The main function that initializes the node and creates an instance of the Service class.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="77" column="1" bodyfile="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" bodystart="77" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: TARGETSERVICE
+
+   :platform: Ubuntu
+   
+   :synopsis: ROS service and actionlib implementation for reaching goals.
+
+.. moduleauthor:: AHMET SAMET KOSUM</verbatim> </para>
+    </detaileddescription>
+    <location file="/home/samet/catkin_ws/src/RT1_assignment2/assignment_2_2022/scripts/TARGETSERVICE.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
