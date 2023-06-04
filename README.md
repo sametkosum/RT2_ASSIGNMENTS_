@@ -9,5 +9,5 @@ Commencing from the second task in Research Track 1, we were requested to develo
 - The robot's current position and the status of all assigned and canceled targets in the environment.
 - the distance of the nearest obstacle
 
-# RT2 - Assignment 1 - Statistics 
+# RT2 - Assignment 3 - Statistics 
 In the third task of Research Track 2, we were tasked with conducting a statistical analysis on the initial task of Research Track 1. This analysis involved comparing two distinct implementations: one provided by a colleague and my own solution. The objective was to determine which implementation performs better when silver and golden tokens are randomly distributed throughout the environment.
